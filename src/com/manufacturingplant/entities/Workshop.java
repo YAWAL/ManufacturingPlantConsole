@@ -39,7 +39,6 @@ public class Workshop {
 
 	
 	public Workshop(int workshopId, String workshopName, String chairman) {
-		super();
 		this.workshopId = workshopId;
 		this.workshopName = workshopName;
 		this.chairman = chairman;
@@ -128,10 +127,8 @@ public class Workshop {
 
 	@Override
 	public String toString() {
-		return "Workshop [workshopId=" + workshopId + ", workshopName=" + workshopName + ", chairman=" + chairman
-				+ ", workshopEmployeeList=" + workshopEmployeeList + ", tools=" + tools + ", productionEquipments="
-				+ productionEquipments + ", nonProductionEquipments=" + nonProductionEquipments + ", materials="
-				+ materials + "]";
+		return "ЦехІД " + workshopId + "; " + workshopName + "; начальник цеху -> "
+				+ chairman;
 	}
 
     //TODO add equals() and hashCode()

@@ -141,10 +141,10 @@ public class WorkshopEmployee {
 
 	@Override
 	public String toString() {
-		return "WorkshopEmployee [id=" + id + ", name=" + name + ", lastName=" + lastName + ", midlName=" + midlName
-				+ ", adress=" + adress + ", dateOfBirdth=" + dateOfBirdth + ", phoneNumber=" + phoneNumber
-				+ ", position=" + position + ", salary=" + salary + ", startDate=" + startDate + ", workshop="
-				+ workshop + "]";
+		return "ПРАЦІВНИК: ІД=" + id + ", ІМЯ___" + name + ", ПРІЗВИЩЕ___" + lastName + ", ПО-БАТЬКОВІ___" + midlName
+				+ ", АДРЕСА___" + adress + ", ДАТА НАРОДЖЕННЯ___" + dateOfBirdth + ", НОМЕР ТЕЛЕФОНУ___" + phoneNumber
+				+ ", ПОСАДА___" + position + ", ОКЛАД___" + salary + ", ПОЧАВ/ЛА ПРАЦЮВАТИ___" + startDate + ", ЦЕХ___"
+				+ workshop;
 	}
 
 

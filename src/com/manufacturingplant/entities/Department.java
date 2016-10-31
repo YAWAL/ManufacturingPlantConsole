@@ -75,8 +75,8 @@ public class Department {
 
 	@Override
 	public String toString() {
-		return "" + departmentId + ", department Name=" + departmentName + ", chairman "
-				+ chairman +  "]";
+		return "ВідділІД " + departmentId + "; " + departmentName + "; начальник відділу -> "
+				+ chairman;
 	}
 
 	// TODO add equals() and hashCode()
