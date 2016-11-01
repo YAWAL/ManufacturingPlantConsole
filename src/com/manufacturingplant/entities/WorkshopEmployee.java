@@ -2,51 +2,46 @@ package com.manufacturingplant.entities;
 
 import java.util.Date;
 
-/**
- * Created by VYA on 07.05.2016.
- */
+
 
 public class WorkshopEmployee {
-    
-    private int id; // Number of personal file
 
-    private String name;
+	private int id; // Number of personal file
 
-    private String lastName;
+	private String name;
 
-    private String midlName;
+	private String lastName;
 
-    private String adress;
+	// private String midlName;
 
-    private String dateOfBirdth;
+	private String adress;
 
-    private String phoneNumber;
+	private String dateOfBirdth;
 
-    private String position;
-    
-    private int salary;
+	private String phoneNumber;
 
-    private String startDate;
+	private String position;
 
-    private Workshop workshop;
+	private int salary;
 
-    public WorkshopEmployee() {
-    }
+	private String startDate;
 
-	public WorkshopEmployee(int id, String name, String lastName, String midlName, String adress, String dateOfBirdth,
-			String phoneNumber, String position, int salary, String startDate, Workshop workshop) {
-		super();
+	// private Workshop workshop;
+
+	public WorkshopEmployee() {
+	}
+
+	public WorkshopEmployee(int id, String name, String lastName, String adress, String dateOfBirdth,
+			String phoneNumber, String position, int salary, String startDate) {
 		this.id = id;
 		this.name = name;
 		this.lastName = lastName;
-		this.midlName = midlName;
 		this.adress = adress;
 		this.dateOfBirdth = dateOfBirdth;
 		this.phoneNumber = phoneNumber;
 		this.position = position;
 		this.salary = salary;
 		this.startDate = startDate;
-		this.workshop = workshop;
 	}
 
 	public int getId() {
@@ -59,10 +54,6 @@ public class WorkshopEmployee {
 
 	public String getLastName() {
 		return lastName;
-	}
-
-	public String getMidlName() {
-		return midlName;
 	}
 
 	public String getAdress() {
@@ -89,10 +80,6 @@ public class WorkshopEmployee {
 		return startDate;
 	}
 
-	public Workshop getWorkshop() {
-		return workshop;
-	}
-
 	public void setId(int id) {
 		this.id = id;
 	}
@@ -103,10 +90,6 @@ public class WorkshopEmployee {
 
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
-	}
-
-	public void setMidlName(String midlName) {
-		this.midlName = midlName;
 	}
 
 	public void setAdress(String adress) {
@@ -133,19 +116,14 @@ public class WorkshopEmployee {
 		this.startDate = startDate;
 	}
 
-	public void setWorkshop(Workshop workshop) {
-		this.workshop = workshop;
-	}	
-
-    //TODO add equals() and hashCode()
+	// TODO add equals() and hashCode()
 
 	@Override
 	public String toString() {
-		return "ПРАЦІВНИК: ІД=" + id + ", ІМЯ___" + name + ", ПРІЗВИЩЕ___" + lastName + ", ПО-БАТЬКОВІ___" + midlName
-				+ ", АДРЕСА___" + adress + ", ДАТА НАРОДЖЕННЯ___" + dateOfBirdth + ", НОМЕР ТЕЛЕФОНУ___" + phoneNumber
-				+ ", ПОСАДА___" + position + ", ОКЛАД___" + salary + ", ПОЧАВ/ЛА ПРАЦЮВАТИ___" + startDate + ", ЦЕХ___"
-				+ workshop;
-	}
+		return "ПРАЦІВНИК: ІД=" + id + ", ІМЯ___" + name + ", ПРІЗВИЩЕ___" + lastName + ", АДРЕСА___" + adress
+				+ ", ДАТА НАРОДЖЕННЯ___" + dateOfBirdth + ", НОМЕР ТЕЛЕФОНУ___" + phoneNumber + ", ПОСАДА___" + position
+				+ ", ОКЛАД___" + salary + ", ПОЧАВ/ЛА ПРАЦЮВАТИ___" + startDate + "\n";
 
+	}
 
 }

@@ -179,7 +179,7 @@ public class DepartamentEmployee {
 	@Override
 	public String toString() {
 		return "ІТР: ІД=" + id + ", ІМЯ___" + name + ", ПРІЗВИЩЕ___" + lastName + ", АДРЕСА___" + adress + ", ДАТА НАРОДЖЕННЯ___" + dateOfBirdth + ", НОМЕР ТЕЛЕФОНУ___" + phoneNumber
-				+ ", ПОСАДА___" + position + ", ОКЛАД___" + salary + ", ПОЧАВ/ЛА ПРАЦЮВАТИ___" + startDate;
+				+ ", ПОСАДА___" + position + ", ОКЛАД___" + salary + ", ПОЧАВ/ЛА ПРАЦЮВАТИ___" + startDate + "\n";
 	}
 
 	

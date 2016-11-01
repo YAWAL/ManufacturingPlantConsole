@@ -42,7 +42,7 @@ public class DepartmentEmployeeCreator {
 		SupplyAndMaterialDepartmentEmployees.add(new DepartamentEmployee(10060934, "Руслан", "Лукянко", "Львів, вул.Левицького",
 				"31.11.1974", "099 048 90 09", "Постачальник", 2025, "01.01.2016"));
 		SupplyAndMaterialDepartmentEmployees.add(new DepartamentEmployee(10064567, "Надія", "Демчак", "Львів, вул.Дністерська",
-				"28.11.1988", "067 284 12 09", "Супер постачальник", 9070, "31.17.2001"));
+				"28.11.1988", "067 284 12 09", "Супер постачальник", 9070, "31.07.2001"));
 		return SupplyAndMaterialDepartmentEmployees;
 	}
 
@@ -87,7 +87,7 @@ public class DepartmentEmployeeCreator {
 	// show all department employees
 	public void showAllDepartmentsEmployees() {
 		System.out.println("-----------------------------");
-		System.out.println("Department employees List");
+		System.out.println("СПИСОК ІНЖЕНЕРНО-ТЕХНІЧНИХ ПРАЦІВНИКІВ");
 		for (ArrayList<DepartamentEmployee> departamentEmployee : departamentEmployees) {
 			System.out.println(departamentEmployee.toString());
 		}

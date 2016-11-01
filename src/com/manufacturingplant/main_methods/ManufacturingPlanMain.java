@@ -1,27 +1,95 @@
 package com.manufacturingplant.main_methods;
 
+import java.util.ArrayList;
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
 import com.manufacturingplant.creators.DepartmentCreator;
+import com.manufacturingplant.creators.DepartmentEmployeeCreator;
 import com.manufacturingplant.creators.EmployeeCreator;
+import com.manufacturingplant.creators.NewWorkshopEmployeeCreator;
 import com.manufacturingplant.creators.WorkshopCreator;
+import com.manufacturingplant.creators.WorkshopEmployeeCreator;
 import com.manufacturingplant.entities.Department;
 import com.manufacturingplant.entities.Workshop;
+import com.manufacturingplant.entities.WorkshopEmployee;
+import com.manufacturingplant.showers.DepartmentEmployeesShower;
+import com.manufacturingplant.showers.WorkshopEmployeesShower;
 
-public class ManufacturingPlanMain {
+public class ManufacturingPlanMain {	
 
-	public static void main(String[] args) {
+	public static void main(String[] args){
+		System.out.println("МАШИНОБУДІВНИЙ ЗАВОД" + "==============Initialization==============");
 
-		
-		DepartmentCreator departmentCreator = new DepartmentCreator();		
+		// CREATING DEPARTAMENTS
+		DepartmentCreator departmentCreator = new DepartmentCreator();
 		departmentCreator.createDepartments();
-		departmentCreator.showAllDepartments();
-		
+		// CREATING WORKSHOPS
 		WorkshopCreator workshopCreator = new WorkshopCreator();
 		workshopCreator.createWorkshops();
-		workshopCreator.showAllWorkshops();
-		
-		EmployeeCreator employeeCreator = new EmployeeCreator();		
+		// CREATING EMPLOYEES
+		EmployeeCreator employeeCreator = new EmployeeCreator();
 		employeeCreator.main(args);
-//		
+		DepartmentEmployeeCreator departmentEmployeeCreator = new DepartmentEmployeeCreator();
+		WorkshopEmployeeCreator workshopEmployeeCreator = new WorkshopEmployeeCreator();
+
+		Scanner scanner = new Scanner(System.in);
+		int typedNumber;
+		
+		
+		System.out.println("ПОКАЗАТИ ВСІ ВІДДІЛИ ЗАВОДУ     - НАТИСНІТЬ 1");
+		System.out.println("ПОКАЗАТИ ВСІ ЦЕХИ ЗАВОДУ        - НАТИСНІТЬ 2");
+		System.out.println("ПОКАЗАТИ СПИСОК ВСІХ ІТРів      - НАТИСНІТЬ 3");
+		System.out.println("ПОКАЗАТИ СПИСОК ВСІХ РОБІТНИКІВ - НАТИСНІТЬ 4");
+		System.out.println("ВНЕСТИ ДАНІ НОВОГО РОБІТНИКА І ПОКАЗАТИ ІНФОРМАЦІЮ ПРО НЬОГО - НАТИСНІТЬ 5");
+
+		System.out.println("If you want Back to start type ");
+
+		typedNumber = scanner.nextInt();
+
+		try {
+			switch (typedNumber) {
+
+			case 1:
+				departmentCreator.showAllDepartments();				
+				main(args);
+				break;
+
+			case 2:
+				workshopCreator.showAllWorkshops();
+				main(args);
+				break;
+
+			case 3:
+				DepartmentEmployeesShower departmentEmployeesShower = new DepartmentEmployeesShower();
+				departmentEmployeesShower.main(args);
+				main(args);
+				break;
+
+			case 4:
+				WorkshopEmployeesShower workshopEmployeesShower = new WorkshopEmployeesShower();
+				workshopEmployeesShower.main(args);
+				main(args);
+				break;
+				
+			case 5:
+				NewWorkshopEmployeeCreator newWorkshopEmployeeCreator = new NewWorkshopEmployeeCreator();
+				newWorkshopEmployeeCreator.createNewWorkshopEmployee();
+				
+				main(args);
+				break;
+				
+			default:
+				System.out.println("НЕПРАВИЛЬНИЙ ВВІД СПРОБУЙТЕ ЩЕ РАЗ");
+				main(args);
+				break;
+			}
+		} catch (InputMismatchException e) {
+			System.out.println("WRONG TYPING, try one more time");
+			main(args);
+		}
+
+		//
 	}
 
 }
