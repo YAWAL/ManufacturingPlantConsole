@@ -7,81 +7,40 @@ import com.manufacturingplant.entities.WorkshopEmployee;
 public class NewWorkshopEmployeeCreator extends WorkshopEmployee {
 
 	public void createNewWorkshopEmployee() {
-		
+
 		Scanner scanner = new Scanner(System.in);
-		System.out.println("create new employee");
+		System.out.println("СТВОРЕННЯ НОВОГО РОБІТНИКА");
 		WorkshopEmployee workshopEmployee = new WorkshopEmployee();
 
-		System.out.println("Enter employee ID");
+		System.out.println("ВВЕДІТЬ ID");
 		workshopEmployee.setId(scanner.nextInt());
 
-		System.out.println("Enter employee name");
+		System.out.println("ВВЕДІТЬ ІМЯ");
 		workshopEmployee.setName(scanner.next());
 
-		System.out.println("Enter employee last name");
+		System.out.println("ВВЕДІТЬ ПРІЗВИЩЕ");
 		workshopEmployee.setLastName(scanner.next());
 
-		System.out.println("Enter employee adress");
+		System.out.println("ВВЕДІТЬ АДРЕСУ");
 		workshopEmployee.setAdress(scanner.next());
 
-		System.out.println("Enter employee birth date");
+		System.out.println("ВВЕДІТЬ ДАТУ НАРОДЖЕННЯ");
 		workshopEmployee.setDateOfBirdth(scanner.next());
 
-		System.out.println("Enter employee phone number");
+		System.out.println("ВВЕДІТЬ НОМЕР ТЕЛЕФОНУ");
 		workshopEmployee.setPhoneNumber(scanner.next());
 
-		System.out.println("Enter employee position");
+		System.out.println("ВВЕДІТЬ ПОСАДУ");
 		workshopEmployee.setPosition(scanner.next());
 
-		System.out.println("Enter employee salary");
+		System.out.println("ВВЕДІТЬ ОКЛАД");
 		workshopEmployee.setSalary(scanner.nextInt());
 
-		System.out.println("Enter employee start date");
+		System.out.println("ВВЕДІТЬ ДАТУ ПОЧАТКУ РОБОТИ");
 		workshopEmployee.setStartDate(scanner.next());
-		
-//		System.out.println("Add employee to workshop");
-//		System.out.println("1 - machinin ");
-//		System.out.println("2 - galvanic  ");
-//		System.out.println("7 - forging ");
-//		System.out.println("8 - microassembly ");
-//		System.out.println("10 - cast ");
-//		System.out.println("20 - micromachining ");
-//		System.out.println("34 - mechanical ");
-//		System.out.println("40 - tool ");
 
-
-//		WorkshopEmployeeCreator workshopEmployeeCreator = new WorkshopEmployeeCreator();
-//		
-//		switch (scanner.nextInt()) {
-//		case 1:
-//			workshopEmployeeCreator.createMachiningWorkshopEmployees();
-//			break;
-//		case 2:
-//			workshopEmployeeCreator.createGalvanicWorkshopEmployees();
-//			break;
-//		case 7:
-//			workshopEmployeeCreator.createForgingWorkshopEmployees();
-//			break;
-//		case 8:
-//			workshopEmployeeCreator.createMicroassemblyWorkshopEmployees();
-//			break;
-//		case 10:
-//			workshopEmployeeCreator.createCastingAndMouldingWorkshopEmployees();
-//			break;
-//		case 20:
-//			workshopEmployeeCreator.createMicromachiningWorkshopEmployees();
-//			break;
-//		case 34:
-//			workshopEmployeeCreator.createMechanicalWorkshopEmployees();
-//			break;
-//		case 40:
-//			workshopEmployeeCreator.createToolWorkshopEmployees();
-//			break;
-//			
-//		default:
-//			break;
-//		}
 		System.out.println(workshopEmployee.toString());
+
 	}
 
 }

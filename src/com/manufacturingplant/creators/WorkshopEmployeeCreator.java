@@ -2,11 +2,9 @@ package com.manufacturingplant.creators;
 
 import java.util.ArrayList;
 
-import com.manufacturingplant.entities.DepartamentEmployee;
 import com.manufacturingplant.entities.WorkshopEmployee;
 
 public class WorkshopEmployeeCreator {
-	
 
 	ArrayList<ArrayList<WorkshopEmployee>> workshopEmployees = new ArrayList<>();
 
@@ -68,11 +66,11 @@ public class WorkshopEmployeeCreator {
 		ArrayList<WorkshopEmployee> CastingAndMouldingWorkshopEmployees = new ArrayList<>();
 		CastingAndMouldingWorkshopEmployees.add(new WorkshopEmployee(10105487, "Іван", "Ваврух", "Львів, вул.Стрийська",
 				"22.01.1969", "050 345 89 67", "Ливарник", 5050, "28.06.2006"));
-		CastingAndMouldingWorkshopEmployees.add(new WorkshopEmployee(10109103, "Ольга", "Білоус", "Львів, вул.Хотинська",
-				"14.11.1970", "098 567 39 23", "Інженер-технолог", 5490, "16.07.1998"));
+		CastingAndMouldingWorkshopEmployees.add(new WorkshopEmployee(10109103, "Ольга", "Білоус",
+				"Львів, вул.Хотинська", "14.11.1970", "098 567 39 23", "Інженер-технолог", 5490, "16.07.1998"));
 		return CastingAndMouldingWorkshopEmployees;
 	}
-	
+
 	public ArrayList<WorkshopEmployee> createForgingWorkshopEmployees() {
 		ArrayList<WorkshopEmployee> ForgingWorkshopEmployees = new ArrayList<>();
 		ForgingWorkshopEmployees.add(new WorkshopEmployee(10075487, "Олександр", "Пушкін", "Львів, вул.Хмельницького",
@@ -81,7 +79,6 @@ public class WorkshopEmployeeCreator {
 				"14.11.1950", "67 028 39 29", "Терміст", 4490, "16.07.1978"));
 		return ForgingWorkshopEmployees;
 	}
-	
 
 	public ArrayList<ArrayList<WorkshopEmployee>> createWorkshopEmployees() {
 		workshopEmployees.add(createToolWorkshopEmployees());
@@ -91,7 +88,7 @@ public class WorkshopEmployeeCreator {
 		workshopEmployees.add(createMechanicalWorkshopEmployees());
 		workshopEmployees.add(createMicromachiningWorkshopEmployees());
 		workshopEmployees.add(createCastingAndMouldingWorkshopEmployees());
-		workshopEmployees.add(createForgingWorkshopEmployees());		
+		workshopEmployees.add(createForgingWorkshopEmployees());
 		return workshopEmployees;
 	}
 
@@ -104,7 +101,5 @@ public class WorkshopEmployeeCreator {
 		}
 		System.out.println("-----------------------------");
 	}
-
-	
 
 }

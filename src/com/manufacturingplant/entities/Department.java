@@ -2,10 +2,6 @@ package com.manufacturingplant.entities;
 
 import java.util.ArrayList;
 
-/**
- * Created by VYA on 11.05.2016.
- */
-
 public class Department {
 
 	private int departmentId;
@@ -15,12 +11,6 @@ public class Department {
 	private String chairman;
 
 	private ArrayList<DepartamentEmployee> departmentEmployeeList;
-
-	// private ArrayList<NonProductionEquipment> nonProductionEquipments;
-	//
-	// private int employeeQuantity;
-	// private int equipmentNonprodQuantity; // quantity of nonproduction
-	// equipments in department
 
 	public Department() {
 	}
@@ -75,11 +65,7 @@ public class Department {
 
 	@Override
 	public String toString() {
-		return "ВідділІД " + departmentId + "; " + departmentName + "; начальник відділу -> "
-				+ chairman;
+		return "ВідділІД " + departmentId + "; " + departmentName + "; начальник відділу -> " + chairman;
 	}
-
-	// TODO add equals() and hashCode()
-
 
 }

@@ -3,10 +3,8 @@ package com.manufacturingplant.creators;
 import java.util.ArrayList;
 
 import com.manufacturingplant.entities.DepartamentEmployee;
-import com.manufacturingplant.entities.Department;
-import com.manufacturingplant.entities.WorkshopEmployee;
 
-public class DepartmentEmployeeCreator {	
+public class DepartmentEmployeeCreator {
 
 	ArrayList<ArrayList<DepartamentEmployee>> departamentEmployees = new ArrayList<>();
 
@@ -39,10 +37,10 @@ public class DepartmentEmployeeCreator {
 
 	public ArrayList<DepartamentEmployee> createSupplyAndMaterialDepartmentEmployees() {
 		ArrayList<DepartamentEmployee> SupplyAndMaterialDepartmentEmployees = new ArrayList<>();
-		SupplyAndMaterialDepartmentEmployees.add(new DepartamentEmployee(10060934, "Руслан", "Лукянко", "Львів, вул.Левицького",
-				"31.11.1974", "099 048 90 09", "Постачальник", 2025, "01.01.2016"));
-		SupplyAndMaterialDepartmentEmployees.add(new DepartamentEmployee(10064567, "Надія", "Демчак", "Львів, вул.Дністерська",
-				"28.11.1988", "067 284 12 09", "Супер постачальник", 9070, "31.07.2001"));
+		SupplyAndMaterialDepartmentEmployees.add(new DepartamentEmployee(10060934, "Руслан", "Лукянко",
+				"Львів, вул.Левицького", "31.11.1974", "099 048 90 09", "Постачальник", 2025, "01.01.2016"));
+		SupplyAndMaterialDepartmentEmployees.add(new DepartamentEmployee(10064567, "Надія", "Демчак",
+				"Львів, вул.Дністерська", "28.11.1988", "067 284 12 09", "Супер постачальник", 9070, "31.07.2001"));
 		return SupplyAndMaterialDepartmentEmployees;
 	}
 
@@ -66,10 +64,10 @@ public class DepartmentEmployeeCreator {
 
 	public ArrayList<DepartamentEmployee> createMechanicalAndMaintenanceDepartmentEmployees() {
 		ArrayList<DepartamentEmployee> MechanicalAndMaintenanceDepartmentEmployees = new ArrayList<>();
-		MechanicalAndMaintenanceDepartmentEmployees.add(new DepartamentEmployee(10095487, "Ярослав", "Долшан", "Львів, вул.Центральна",
-				"23.11.1989", "050 903 89 34", "Механік", 7050, "28.06.2011"));
-		MechanicalAndMaintenanceDepartmentEmployees.add(new DepartamentEmployee(10099103, "Ольга", "Білоус", "Львів, вул.Сокальська",
-				"14.11.1990", "098 490 39 67", "Інженер-механік", 2490, "11.03.2010"));
+		MechanicalAndMaintenanceDepartmentEmployees.add(new DepartamentEmployee(10095487, "Ярослав", "Долшан",
+				"Львів, вул.Центральна", "23.11.1989", "050 903 89 34", "Механік", 7050, "28.06.2011"));
+		MechanicalAndMaintenanceDepartmentEmployees.add(new DepartamentEmployee(10099103, "Ольга", "Білоус",
+				"Львів, вул.Сокальська", "14.11.1990", "098 490 39 67", "Інженер-механік", 2490, "11.03.2010"));
 		return MechanicalAndMaintenanceDepartmentEmployees;
 	}
 

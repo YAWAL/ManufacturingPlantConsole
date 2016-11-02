@@ -1,9 +1,5 @@
 package com.manufacturingplant.entities;
 
-import java.util.Date;
-
-
-
 public class WorkshopEmployee {
 
 	private int id; // Number of personal file
@@ -11,8 +7,6 @@ public class WorkshopEmployee {
 	private String name;
 
 	private String lastName;
-
-	// private String midlName;
 
 	private String adress;
 
@@ -25,8 +19,6 @@ public class WorkshopEmployee {
 	private int salary;
 
 	private String startDate;
-
-	// private Workshop workshop;
 
 	public WorkshopEmployee() {
 	}
@@ -115,8 +107,6 @@ public class WorkshopEmployee {
 	public void setStartDate(String startDate) {
 		this.startDate = startDate;
 	}
-
-	// TODO add equals() and hashCode()
 
 	@Override
 	public String toString() {

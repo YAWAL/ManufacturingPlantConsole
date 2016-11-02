@@ -2,7 +2,6 @@ package com.manufacturingplant.creators;
 
 import java.util.ArrayList;
 
-import com.manufacturingplant.entities.Department;
 import com.manufacturingplant.entities.Workshop;
 
 public class WorkshopCreator {
@@ -40,5 +39,4 @@ public class WorkshopCreator {
 		System.out.println("-----------------------------");
 	}
 
-	
 }
